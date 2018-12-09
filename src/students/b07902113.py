@@ -5,7 +5,7 @@ edit it there.
 '''
 
 
-def task_1(dummy=None):
+def task_1(dummy = None):
     '''
     Task 1: Basic Syntax and Flake8 Checker
 
@@ -111,7 +111,7 @@ def task_2(
     '''
     # TODO: change length and sentence to fit the requirement
     length = len(input_list)
-    sentence = str(input_list[target_index])+input_dictionary[target_key]
+    sentence = str(input_list[target_index]) + input_dictionary[target_key]
     # End of TODO
     input_list_length_and_sentence = (length, sentence)
     print(input_list_length_and_sentence)
@@ -302,7 +302,7 @@ def task_6(
         '''
         # TODO: use the above functions to calculate cosine similarity of
         # the two vectors v1 and v2
-        cos_sim = dot_product(v1,v2)/(norm(v1)*norm(v2))
+        cos_sim = dot_product(v1,v2) / (norm(v1) * norm(v2))
         # End of TODO
 
         return cos_sim
@@ -385,7 +385,7 @@ def task_8(
     from PIL import Image
     urllib.request.urlretrieve(img_url,'/mnt/c/users/attis/desktop/pythonhomework/src/b07902113.jpg')
     with Image.open('/mnt/c/users/attis/desktop/pythonhomework/src/b07902113.jpg')as result_img:
-    	result_img=draw_text(result_img,'b07902113') 
+    	result_img = draw_text(result_img,'b07902113') 
     	result_img.show()
     # result_img.show(req)
     # You are allowed to change the img_url to your own image URL.
